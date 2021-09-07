@@ -1,0 +1,38 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<Product>
+
+@{ 
+    ViewData["Title"] = "Product List";
+}
+    <title></title>
+
+    <!--Creating a table-->
+    <table style="width:100%">
+        <caption>Product list</caption>
+        <thead>
+            <tr>
+                <th>ProductId</th>
+                <th>CustomerId</th>
+                <td>Pen_type</td>
+                <td>Quantity</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            </tr>
+        </tbody>
+        @foreach (var product in Model)
+        {
+    <tr>
+        <td>@product.ProductId</td>
+        <td>@product.CustomerId</td>
+        <td>@product.Pen_type</td>
+        <td>@product.Quantity</td>
+        <td>Quantity</td>
+
+    </tr>
+        }
+    </table>
+   

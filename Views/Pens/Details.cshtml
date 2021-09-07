@@ -1,0 +1,19 @@
+﻿@model HomeDetailsViewModel
+
+<!--this is a razor view so we use@sysmbol
+    for razor view to inform we are writing csharp code-->
+<h3>@ViewBag.PageTitle</h3>
+<!--retrieving the product object stored the view data dictionary-->
+<h3>
+    @Model.PageTitle
+</h3>
+<div>
+    ProductId: @Model.Product.ProductId
+
+</div>
+
+<div>
+    Quantity: @Model.Product.Quantity
+
+</div>
+
